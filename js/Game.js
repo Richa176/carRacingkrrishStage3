@@ -103,21 +103,11 @@ class Game {
      
 
     }
-    // if(keyIsDown(UP_ARROW) && player.index !== null){
-    //   player.y-=10;
-    //   player.update();
-    // }
+  
     if(keyIsDown(RIGHT_ARROW) && player.index !== null){
       player.distance +=100
       player.update();
     }
-
-    
-
-    // if(keyIsDown(DOWN_ARROW) && player.index !== null){
-    //   player.y+=10;
-    //   player.update();
-    // }
 
     if(player.distance > 6700){
       gameState = 2;
